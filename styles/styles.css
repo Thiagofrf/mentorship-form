@@ -14,6 +14,7 @@
     --border-color: #E6E6F0;
     --label-highlight-color: #C1BCCC;
     --label-highlight-color-hover: #767479;
+    --input-bg: #FAFAFC;
 }
 
 header h1, fieldset legend, form button {
@@ -23,6 +24,28 @@ header h1, fieldset legend, form button {
 body {
     background: var(--main-bg);
     font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+    padding: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--label-highlight-color-hover);
 }
 
 header::before {
@@ -133,6 +156,7 @@ form fieldset label p span:hover {
 
 form fieldset input, form fieldset select, form fieldset textarea {
     height: 56px;
+    background: var(--input-bg);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 0 16px;

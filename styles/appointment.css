@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-bg: #535971;
+    --main-bg: #EFEFEF;
+    --submit-bg: #FF5374;
+    --white: #FFF;
+    --label-color: #4E4958;
+    --border-color: #E6E6F0;
+    --label-highlight-color: #C1BCCC;
+    --label-highlight-color-hover: #767479;
+    --input-bg: #FAFAFC;
+}
+
+header h1, fieldset legend, form button, .first-mentorship > p, .second-mentorship > p {
+    font-family: 'Staatliches', cursive;
+}
+
+body {
+    background: var(--main-bg);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+    padding: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--label-highlight-color-hover);
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 465px;
+    width: 100%;
+    z-index: -1;
+    background: var(--header-bg);
+}
+
+header {
+    width: 750px;
+    margin: 110px auto 0;
+}
+
+header h1 {
+    font-size: 36px;
+    color: var(--white);
+}
+
+header p {
+    color: var(--white);
+    margin-bottom: 24px;
+}
+
+main {
+    margin-top: 32px;
+}
+
+form {
+    width: 750px;
+    margin: auto;
+    background: var(--white);
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+form fieldset {
+    border: none;
+    padding: 0 64px;
+}
+
+form fieldset legend {
+    padding-top: 30px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: var(--header-bg);
+    line-height: 34px;
+}
+
+form fieldset:nth-child(1) legend {
+    padding-top: 64px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper .full-name-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.input-wrapper .full-name-wrapper label {
+    width: 300px;
+}
+
+form fieldset label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--label-color);
+    margin-bottom: 8px;
+}
+
+form fieldset label p span {
+    color: var(--label-highlight-color);
+    font-size: 12px;
+}
+
+form fieldset label p span:hover {
+    color: var(--label-highlight-color-hover);
+}
+
+form fieldset input  {
+    height: 56px;
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0 16px;
+}
+
+form fieldset hr {
+    border: none;
+    height: 1px;
+    background: var(--border-color);
+    margin-bottom: 32px;
+}
+
+.first-mentorship > p, .second-mentorship > p {
+    font-size: 20px;
+    color: var(--header-bg);
+    margin-bottom: 8px;
+}
+
+.second-mentorship > p {
+    margin-top: 16px;
+}
+
+.input-wrapper.date-wrapper {
+    flex-direction: row;
+}
+
+.input-wrapper.date-wrapper label:nth-child(1) input {
+    width: 300px;
+    margin-right: 32px;
+}
+
+.input-wrapper.date-wrapper label:nth-child(2) input {
+    margin-right: 10px;
+}
+
+.input-wrapper.date-wrapper label:nth-child(2) input, .input-wrapper.date-wrapper label:nth-child(3) input {
+    width: 140px;
+}
+
+.button-container {
+    width: 100%;
+    background: var(--header-bg);
+    border-radius: 0 0 20px 20px;
+    margin-top: 64px;
+}
+
+.button-container button {
+    margin: 64px;
+    width: 622px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: var(--white);
+    line-height: 26px;
+    background: var(--submit-bg);
+}
+
